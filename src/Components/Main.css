@@ -1,0 +1,334 @@
+.main-title,
+.main-title-number {
+  height: 80px;
+  margin-left: 40%;
+  font-weight: 700;
+  font-size: 42px;
+  font-family: "Frijole", cursive;
+  color: var(--mainColor);
+  text-shadow: 1px 1px 10px black;
+  padding-top: 2rem;
+}
+.main-title-number {
+  padding-left: 6%;
+  padding-bottom: 1rem;
+}
+
+.items {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template: auto / repeat(3, 30fr);
+  justify-items: center;
+  row-gap: 6rem;
+  padding-left: 1.5%;
+  padding-left: 2rem;
+}
+
+.item {
+  width: 80%;
+  height: 100%;
+}
+.item-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.item-name,
+.add-item-title {
+  height: 10%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+}
+.add-item-title {
+  margin-left: 40%;
+}
+.item-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item-price {
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  margin-top: 30px;
+  padding-right: 2rem;
+}
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 32px;
+  min-width: 32px;
+  height: 2.5rem;
+  height: 32px;
+  min-height: 32px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+  margin-top: 25px;
+  padding-left: 2rem;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addForm {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding-left: 5%;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type="text"],
+.addForm input[type="number"] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+.addForm input[type="checkbox"] {
+  width: 32px;
+  max-width: calc(100% - 50px);
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 12rem;
+  border-radius: 0.25rem;
+
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+  margin: 2rem;
+  margin-left: 5.2%;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 90%;
+  padding-left: 4%;
+  display: flex;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+/* .main-title,
+.main-title-number {
+  height: 40px;
+  margin-left: 40%;
+  font-weight: 700;
+  font-size: 42px;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+}
+.main-title-number {
+  padding-left: 6%;
+}
+
+.items {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template: auto / repeat(3, 30fr);
+  justify-items: center;
+  row-gap: 6rem;
+  padding-left: 1.5%;
+}
+
+.item {
+  width: 80%;
+  height: 100%;
+}
+.item-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.item-name,
+.add-item-title {
+  height: 10%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+}
+.add-item-title {
+  margin-left: 40%;
+}
+.item-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item-price {
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  margin-top: 30px;
+  padding-right: 2rem;
+}
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 32px;
+  min-width: 32px;
+  height: 2.5rem;
+  height: 32px;
+  min-height: 32px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+  margin-top: 25px;
+  padding-left: 2rem;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: red;
+  outline: none;
+}
+
+.addForm {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding-left: 5%;
+  border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type="text"],
+.addForm input[type="number"] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+.addForm input[type="checkbox"] {
+  width: 32px;
+  max-width: calc(100% - 50px);
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 12rem;
+  border-radius: 0.25rem;
+
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+  margin: 2rem;
+  margin-left: 5.2%;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 90%;
+  padding-left: 4%;
+  display: flex;
+}
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 32px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+} */

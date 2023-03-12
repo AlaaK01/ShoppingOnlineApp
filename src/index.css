@@ -1,13 +1,139 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,400;1,700&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Frijole", cursive;
+}
+
+:root {
+  --mainColor: #282c34;
+  --mainColorLight: #50545b;
+  --secondaryColor: #ea1538;
+  --textColor: #eee;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer {
+  height: 40vh;
+  width: 100%;
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.soon {
+  height: 100%;
+  width: 30%;
+}
+.inside-soon {
+  height: 100%;
+  width: 90%;
+  background-image: url("../public/images/see-you-soon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text-footer {
+  height: 100%;
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-footer p {
+  font-size: 56px;
+  color: var(--textColor);
+  font-weight: 700;
+  font-family: "Frijole", cursive;
+}
+.change-style {
+  width: 100%;
+  height: 50%;
+  color: var(--textColor);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.change-style label {
+  padding: 1rem;
+}
+.image-footer {
+  height: 100%;
+  width: 30%;
+
+  background-image: url("../public/images/24.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.addUserForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  background-color: aliceblue;
+}
+
+.addUserForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addUserForm input[type="text"],
+.addUserForm input[type="Number"] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+.addUserForm input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.addUserForm input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+
+.to-add-user:focus,
+.to-add-user:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
 }

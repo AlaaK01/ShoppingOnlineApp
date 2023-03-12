@@ -1,0 +1,104 @@
+.user-continer {
+  width: 100%;
+  height: 100%;
+}
+.users {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: auto / repeat(3, 30fr);
+  justify-items: center;
+  row-gap: 5rem;
+}
+
+.user {
+  width: 80%;
+  height: 100%;
+  border: solid 2px orange;
+
+  border: 5px solid rgb(187, 203, 208);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-body {
+  width: 90%;
+  height: 25rem;
+  margin-top: 1rem;
+}
+.user-image {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.name-body,
+.email-body,
+.city-body,
+.phone-body {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+  width: 90%;
+}
+.name-text,
+.email-text,
+.city-text,
+.phone-text {
+  width: 100%;
+  min-height: 10%;
+
+  padding: 5px;
+}
+.email-text,
+.city-text,
+.phone-text {
+  font-size: 16px;
+  border: 2px solid rgb(225, 224, 224);
+}
+
+.user-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.user svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.user svg:focus,
+.user svg:hover {
+  color: red;
+  outline: none;
+}
+
+.update {
+  height: 2.2rem;
+  min-width: 7rem;
+  border-radius: 0.25rem;
+
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+  margin: 2rem;
+  margin-left: 5.2%;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}

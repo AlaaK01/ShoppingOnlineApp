@@ -1,0 +1,74 @@
+.cart-title,
+.cart-title-number {
+  height: 50px;
+  margin-left: 40%;
+  font-weight: 700;
+  font-size: 42px;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+}
+.cart-title-number {
+  padding-left: 6%;
+}
+
+.cart-items {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  padding-left: 5%;
+  gap: 4rem;
+}
+
+.cart-item {
+  width: 30%;
+  height: 40rem;
+}
+.cart-item-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.cart-item-name {
+  height: 10%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  color: black;
+  text-shadow: 1px 1px 10px black;
+}
+
+.cart-item-price {
+  font-weight: 400;
+  font-family: "Frijole", cursive;
+  margin-top: 30px;
+  padding-left: 1rem;
+}
+
+.cart-item svg {
+  width: 72px;
+  min-width: 72px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+  margin-top: 25px;
+  padding-left: 1rem;
+}
+
+.cart-item svg:focus,
+.cart-item svg:hover {
+  color: red;
+  outline: none;
+}
+.item-line {
+  width: 90vw;
+  height: 2px;
+  background-color: var(--mainColor);
+  margin-top: 2rem;
+}
